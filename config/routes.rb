@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+  get 'order/create'
+
+  post 'order/submit'
+  get 'order/thank_you'
+
+  get 'sessions/create'
+
+  get 'sessions/update'
+
+  get 'sessions/destroy'
+
   get 'home/index'
 
   get 'home/about_us'
@@ -6,6 +17,7 @@ Rails.application.routes.draw do
   resources :menu_items
   resources :sections
   root 'home#index'
+  post 'update-order' => 'sessions#update'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

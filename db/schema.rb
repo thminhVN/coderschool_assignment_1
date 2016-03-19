@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160313074628) do
+ActiveRecord::Schema.define(version: 20160319054230) do
 
   create_table "menu_items", force: :cascade do |t|
     t.string   "name"
@@ -25,6 +25,16 @@ ActiveRecord::Schema.define(version: 20160313074628) do
   end
 
   add_index "menu_items", ["section_id"], name: "index_menu_items_on_section_id"
+
+  create_table "order_items", force: :cascade do |t|
+    t.string   "name"
+    t.string   "phone"
+    t.string   "address"
+    t.text     "detail"
+    t.string   "total"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "sections", force: :cascade do |t|
     t.string   "name"

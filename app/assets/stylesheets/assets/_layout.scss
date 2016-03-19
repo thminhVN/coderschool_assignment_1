@@ -6,7 +6,7 @@ body{
 	padding-top: 71px;
 }
 body.home{
-	background: image-url('bg.png') repeat 0 0 transparent;
+	background: image-url('bg.png') repeat center center transparent;
 }
 footer{
 	background-color: black;
@@ -25,6 +25,7 @@ footer{
 .banner{
 	position: relative;
 	height: 400px;
+	margin-bottom: 50px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	background-size: cover;
