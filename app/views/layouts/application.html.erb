@@ -22,7 +22,7 @@
             <ul class="nav navbar-nav navbar-right">
               <li><%= link_to 'CONTACT US', root_path %></li>
               <li><%= link_to 'MENU', menu_items_path %></li>
-              <li><%= link_to 'ORDER (' + session[:order].count.to_s + ')', order_create_path, :id => 'order-menu' %></li>
+              <li><%= link_to 'ORDER (' + get_session_count('order').to_s + ')', order_create_path, :id => 'order-menu' %></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
