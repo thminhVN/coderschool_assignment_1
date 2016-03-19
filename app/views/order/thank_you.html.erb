@@ -8,7 +8,7 @@
 <section id="order">
 	<div class="container">
 		<h1 class="text-success">Thanks you</h1>
-		<h3>Your order detail</h3>
+		<h3>Your order detail at <%= @new_order.created_at.strftime("%Y, %B-%d %H:%M:%S")%></h3>
 		<address>
 		  <strong><%= @new_order.name%></strong><br>
 		  <%= @new_order.address%><br>
