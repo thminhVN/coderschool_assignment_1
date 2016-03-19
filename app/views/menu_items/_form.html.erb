@@ -11,31 +11,31 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, :class => 'form-control' %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :description %><br>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, :class => 'form-control' %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :price %><br>
-    <%= f.number_field :price %>
+    <%= f.number_field :price, :class => 'form-control' %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :img_url %><br>
-    <%= f.text_field :img_url %>
+    <%= f.text_field :img_url, :class => 'form-control' %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :views_count %><br>
-    <%= f.number_field :views_count %>
+    <%= f.number_field :views_count, :class => 'form-control' %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :section_id %><br>
-    <%= f.select :section_id, options_for_select(Section.all.map{|s|[s.name, s.id]}, @menu_item.section_id) %>
+    <%= f.select :section_id, options_for_select(Section.all.map{|s|[s.name, s.id]}, @menu_item.section_id), {}, {:class => 'form-control'} %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-group">
+    <%= f.submit :class => 'btn btn-success' %>
   </div>
 <% end %>

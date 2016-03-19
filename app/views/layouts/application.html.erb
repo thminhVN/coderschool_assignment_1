@@ -3,12 +3,11 @@
 <head>
 	<title>Restaurant</title>
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-	<%= stylesheet_link_tag    params[:controller], media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	<%= csrf_meta_tags %>
 </head>
-<body>
-	<nav class="navbar navbar-inverse" id="main-menu">
+<body id="body" class="<%= params[:controller] %>">
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="main-menu">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -21,8 +20,7 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><%= link_to 'WELCOME', root_path %></li>
-              <li><a href="#about-us">ABOUT US</a></li>
+              <li><%= link_to 'CONTACT US', root_path %></li>
               <li><%= link_to 'MENU', menu_items_path %></li>
               <li><a href="#">ORDER</a></li>
             </ul>
@@ -30,5 +28,15 @@
         </div><!--/.container-fluid -->
       </nav>
 	<%= yield %>
+	<footer>
+		<div class="container">
+			<div class="col-sm-6">
+				<p class="sub-footer-text text-center">Minh Tran 2016, Theme by <a href="https://themewagon.com/">ThemeWagon</a></p>
+			</div>
+			<div class="col-sm-6 text-right">
+				<p class="sub-footer-text">Use it for my assignment</p>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>

@@ -1,0 +1,36 @@
+h1, h2.menu-name {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 0.040em;
+    border: 8px solid #2f2e2f;
+    display: inline-block;
+    padding: 7px 16px;
+    margin: 0 0 30px 0;
+    text-transform: capitalize;
+    @media screen and (min-width: 660px){
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: 0.040em;
+      border: 1px solid #2f2e2f;
+    }
+}
+a{
+  text-decoration: none !important;
+}
+p.desc-text {
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+}
+p.sub-footer-text {
+    color: #6B6B6B;
+    a{
+      color: #BDBDBD;
+    }
+}
+a.color_animation{
+  color: white;
+}
+.color_animation:hover {
+    color: #9BE86F !important;
+}

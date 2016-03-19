@@ -1,0 +1,7 @@
+<li class="mix <%= menu_item.section.name.downcase%>" data-value="<%= menu_item.price%>" data-name="<%= menu_item.name.downcase%>">
+	<a href="<%= menu_item_path :id => menu_item.id %>">
+		<%= image_tag(menu_item.img_url, alt: menu_item.name) %>
+		<div class="name"><%= menu_item.name%></div>
+		<div class="price"><%= menu_item.price%></div>
+	</a>
+</li>

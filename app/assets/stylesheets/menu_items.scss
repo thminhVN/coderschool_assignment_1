@@ -1,3 +1,92 @@
-// Place all the styles related to the MenuItems controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.banner#menu{
+	background-image: image-url('bg-menu.jpg');
+}
+.banner.menu-item{
+	.follow_container{
+		top: 10%;
+	}
+}
+
+.filter-list {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    li {
+	    font-weight: bold;
+	    color: black !important;
+	    display: inline-block;
+	    width: auto;
+	    padding: 6px 10px;
+	    margin-right: 15px;
+	    font-size: 1.2em;
+	    cursor: pointer;
+	    /* border-radius: 3px; */
+	    border-bottom: 1px solid rgba(255, 255, 255, 0);
+	}
+	li:hover {
+	    color: rgb(129, 24, 24) !important;
+	}
+	li.active {
+	    font-weight: bold;
+	    border-color: #000;
+	}
+}
+#list-menu{
+	padding-left: 0;
+	text-align: center;
+	li{
+		display: inline-block;
+		width: 200px;
+	    margin: 0 7.5px 15px 7.5px;
+	    position: relative;
+	    overflow: hidden;
+	    height: 200px;
+		img{
+			width: 100%;
+		}
+		.name{
+			padding: 10px;
+		    color: white;
+		    font-size: 20px;
+		    text-align: center;
+		    font-weight: bold;
+		    position: absolute;
+		    top: 133px;
+		    left: 0;
+		    right: 0;
+		    display: block;
+		    background-color: rgba(211, 15, 34, 1);
+		    min-height: 70px;
+		    @include transition(all, 0.5s);
+		}
+		.price{
+			position: absolute;
+			top: 0;
+			right: 0;
+			background-color: rgba(211, 15, 34, 1);
+			padding: 5px;
+			font-size: 12px;
+			color: white;
+		}
+	}
+	li:hover,li:focus{
+		.name{
+			top: auto;
+			bottom: 0;
+		}
+	}
+	.mix{
+		display: none;
+	}
+}
+.menu-price{
+	font-weight: bold;
+	font-size: 40px;
+	span{
+		color: rgba(211, 15, 34, 1);
+	}
+}
+#section-menu-item-detail{
+	padding: 50px 15px;
+}

@@ -1,34 +1,25 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @menu_item.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @menu_item.description %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @menu_item.price %>
-</p>
-
-<p>
-  <strong>Img url:</strong>
-  <%= @menu_item.img_url %>
-</p>
-
-<p>
-  <strong>Views count:</strong>
-  <%= @menu_item.views_count %>
-</p>
-
-<p>
-  <strong>Section:</strong>
-  <%= @menu_item.section %>
-</p>
-
-<%= link_to 'Edit', edit_menu_item_path(@menu_item) %> |
-<%= link_to 'Back', menu_items_path %>
+<div id="menu" class="banner menu-item">
+  <div class="follow_container">
+    <div class="col-md-6 col-md-offset-3">
+      <h2 class="top-title"><%= @menu_item.name %></h2>
+    </div>
+  </div>
+</div>
+<section id="section-menu-item-detail">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'Menu', menu_items_path %></li>
+      <li class="active"><%= @menu_item.name %></li>
+    </ol>
+    <h2 class="menu-name"><%= @menu_item.name %></h2>
+    <div class="row">
+      <div class="col-sm-5"><%= image_tag(@menu_item.img_url, alt: @menu_item.name, class: 'img-responsive') %></div>
+      <div class="col-sm-7">
+        <p class="desc-text"><%= @menu_item.description %></p>
+        <p class="menu-price">Price: <span><%= @menu_item.price %> VND</span></p>
+        <button type="button" class="btn btn-danger btn-lg btn-order">Add to Order</button>
+      </div>
+    </div>
+  </div>
+</section>

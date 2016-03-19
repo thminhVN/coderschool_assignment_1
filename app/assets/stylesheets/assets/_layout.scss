@@ -1,3 +1,64 @@
+@import 'assets/mixin';
 html,body{
 	height: 100%;
+}
+body{
+	padding-top: 71px;
+}
+body.home{
+	background: image-url('bg.png') repeat 0 0 transparent;
+}
+footer{
+	background-color: black;
+	padding: 50px 15px;
+}
+.social_icons{
+	padding: 0;
+	li {
+		display: inline-block;
+		width: 70px;
+		a {
+    		font-size: 30px;
+		}
+	}
+}
+.banner{
+	position: relative;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: cover;
+	.follow_container{
+		top: 25%;
+	}
+}
+.follow_container {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    text-align: center;
+}
+.top-title {
+    color: white;
+    font-family: 'Playball', cursive;
+    font-size: 120px;
+    font-weight: 400;
+    @media (max-width: 660px){
+        font-size: 67px;
+    }
+}
+.second-title {
+	color:white;
+    font-weight: lighter;
+    font-size: 30px;
+    font-style: italic;
+    text-transform: capitalize;
+    @media (max-width: 660px){
+        font-size: 21px;
+    }
+}
+.breadcrumb{
+	background-color: transparent;
+	@include border-radius(0);
+	padding: 10px 0;
 }

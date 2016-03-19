@@ -1,5 +1,4 @@
 #home-top{
-	margin-top: -72px;
     padding: 0;
     min-width: 100%;
     height: 100%;
@@ -7,28 +6,21 @@
     background-size: cover;
     text-align: center;
     background-position: center;
+    position: relative;
 }
-.follow_container {
-    width: 100%;
+
+#scroll-down{
     position: absolute;
-    top: 35%;
-    text-align: center;
-}
-.top-title {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
     color: white;
-    font-family: 'Playball', cursive;
-    font-size: 120px;
-    font-weight: 400;
+    font-weight: 16px;
 }
-.second-title {
-	color:white;
-    font-weight: lighter;
-    font-size: 30px;
-    font-style: italic;
-    text-transform: capitalize;
-}
+
 .description_content {
-    padding: 50px 0;
+    padding: 30px 0 75px 0;
     width: 100%;
     background: #fff;
     margin: 0 auto 0 auto;
@@ -36,4 +28,48 @@
     position: relative;
     background: white;
     text-align: center;
+}
+.img-section{
+    text-align: center;
+    img{
+        padding: 5px;
+        font-size: 0;
+    }
+}
+
+section.social_connect {
+    background-color: black;
+    text-align: center;
+    margin: 50px 0;
+}
+.text-content.container {
+    margin-top: 65px;
+    margin-bottom: -51px;
+}
+.social_heading {
+    font-size: 33px;
+    margin: 50px 0 0 0;
+    font-weight: 900;
+    letter-spacing: 0.040em;
+    color: #63C85D;
+    text-align: center;
+    display: block;
+}
+.social_info, .social_icons {
+    margin: 18px 0 50px 0;
+}
+
+.social_info a {
+    display: inline-block;
+    margin: 0 auto;
+    width: 325px;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0.200em;
+    line-height: 1.400em;
+    text-decoration: none;
+}
+
+iframe{
+    pointer-events: none;
 }

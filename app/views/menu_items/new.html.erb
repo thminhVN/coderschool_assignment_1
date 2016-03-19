@@ -1,5 +1,16 @@
-<h1>New Menu Item</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Back', menu_items_path %>
+<div id="menu" class="banner">
+	<div class="follow_container">
+		<div class="col-md-6 col-md-offset-3">
+			<h2 class="top-title">Create new menu</h2>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<ol class="breadcrumb">
+		<li><%= link_to 'Home', root_path %></li>
+		<li><%= link_to 'Menu', menu_items_path %></li>
+		<li class="active">Create new menu</li>
+	</ol>
+	<h1>New Menu Item</h1>
+	<%= render 'form' %>
+</div>

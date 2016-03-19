@@ -1,4 +1,3 @@
-@import 'asset/variables';
 $positions : left, right, top, bottom;
 @for $i from -4 through 20 {
     .pd-all-xs-#{$i}{

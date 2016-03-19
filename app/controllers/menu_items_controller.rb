@@ -4,6 +4,7 @@ class MenuItemsController < ApplicationController
   # GET /menu_items
   # GET /menu_items.json
   def index
+    @sections = Section.all
     @menu_items = MenuItem.all
   end
 

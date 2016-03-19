@@ -1,6 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import url(https://fonts.googleapis.com/css?family=Pacifico);
-@import url(https://fonts.googleapis.com/css?family=Playball&subset=latin,latin-ext);
+@import url(//fonts.googleapis.com/css?family=Pacifico);
+@import url(//fonts.googleapis.com/css?family=Playball&subset=latin,latin-ext);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import "assets/typography";
 @import "assets/layout";
 @import "assets/menu";
+@import "home";
+@import "menu_items";
